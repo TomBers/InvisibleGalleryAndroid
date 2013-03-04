@@ -1,0 +1,16 @@
+# Generated files
+/gen
+/bin
+
+# Java class files
+*.class
+
+# Dalvik VM files
+*.dex
+
+# OS generated files
+.DS_Store*
+Thumbs.db
+
+# Proguard stuff
+/proguard-project.txt

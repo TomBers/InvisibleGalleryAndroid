@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VideoPlay</string>
+    <string name="app_description">QCAR VideoPlayback Sample Application</string>
+    <string name="startup_description">This sample application shows how to play a video in AR mode.\n\nDevices that support video on texture can play the video directly on the image target. Other devices will play the video in full screen mode.</string>
+    <string name="startup_button">Start</string>
+    <string name="background_view_img">Background view image</string>
+</resources>
