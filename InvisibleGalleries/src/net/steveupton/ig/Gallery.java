@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.aart.gallery;
+package net.steveupton.ig;
 
 /**
  * @author Steve Upton

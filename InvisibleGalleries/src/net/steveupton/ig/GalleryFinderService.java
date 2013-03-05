@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.aart.gallery;
+package net.steveupton.ig;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -46,6 +46,8 @@ public class GalleryFinderService extends Service {
 	LocationManager locationManager;
 
 	LocationProvider locationProvider;
+	
+	int a;
 
 	/**
 	 * 

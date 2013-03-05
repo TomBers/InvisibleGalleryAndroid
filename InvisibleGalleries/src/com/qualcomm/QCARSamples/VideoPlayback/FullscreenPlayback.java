@@ -34,6 +34,8 @@ package com.qualcomm.QCARSamples.VideoPlayback;
 
 import java.util.concurrent.locks.ReentrantLock;
 
+import net.steveupton.ig.R;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.AssetFileDescriptor;

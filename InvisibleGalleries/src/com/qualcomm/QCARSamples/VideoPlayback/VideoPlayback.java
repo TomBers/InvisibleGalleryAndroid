@@ -32,6 +32,8 @@ package com.qualcomm.QCARSamples.VideoPlayback;
 
 import java.util.Vector;
 
+import net.steveupton.ig.R;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -342,7 +344,7 @@ public class VideoPlayback extends Activity
         
         // Start the service that will detect when galleries are near
         System.out.println("STARTING SERVICE");
-        Intent intent = new Intent("com.aart.gallery.GalleryFinderService");
+        Intent intent = new Intent("net.steveupton.ig.GalleryFinderService");
         //bindService(intent, null, Context.BIND_AUTO_CREATE);
         startService(intent);
         System.out.println("DONE STARTING SERVICE");

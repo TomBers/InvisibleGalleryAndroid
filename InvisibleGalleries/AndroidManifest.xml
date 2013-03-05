@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.qualcomm.QCARSamples.VideoPlayback"
+      package="net.steveupton.ig"
       android:versionCode="200"
       android:versionName="2.0">
 
@@ -103,7 +103,7 @@
         -->
         <activity android:label="@string/app_name"
                   android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
-                  android:name=".VideoPlayback">
+                  android:name="com.qualcomm.QCARSamples.VideoPlayback.VideoPlayback">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -117,7 +117,7 @@
         -->
         <activity android:label="@string/app_name"
                   android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
-                  android:name=".FullscreenPlayback"
+                  android:name="com.qualcomm.QCARSamples.VideoPlayback.FullscreenPlayback"
                   android:exported="false">
 
             <intent-filter>
@@ -126,10 +126,10 @@
 
         </activity>
         
-        <service android:name="com.aart.gallery.GalleryFinderService"
+        <service android:name="net.steveupton.ig.GalleryFinderService"
              android:exported="false">
              <intent-filter>
-                <action android:name="com.aart.gallery.GalleryFinderService" >
+                <action android:name="net.steveupton.ig.GalleryFinderService" >
              </action>
           </intent-filter>
           </service>
