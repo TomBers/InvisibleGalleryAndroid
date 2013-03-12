@@ -182,6 +182,8 @@ public class GalleryFinderService extends Service {
 						+ location.getLatitude()
 						+ "),4326))&api_key=6c488ad00f45400158ff329ea170e2db0c4c40a8";
 				
+				// TODO Switch to igss
+				
 				// Execute the database query
 				HttpClient httpclient = new DefaultHttpClient();
 				HttpPost httppost = new HttpPost(urlString);
@@ -208,6 +210,8 @@ public class GalleryFinderService extends Service {
 				if (totalRows > 0) {
 					JSONArray galleries = result.getJSONArray("rows");
 					JSONObject gallery = galleries.getJSONObject(0);
+					
+					// TODO Switch to igss query
 					
 					// TODO TEMP (Only in place to stop repeated redownload of galleries during testing).
 					if (galleryFound) return null;	// TODO TEMP 

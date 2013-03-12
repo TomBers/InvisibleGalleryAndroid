@@ -34,12 +34,32 @@ public class Gallery {
 	 * The JSON object that describes the gallery.
 	 */
 	private JSONObject galleryJSON;
+	
+	/**
+	 * The name of this gallery.
+	 */
+	private String name;
+	
+	/**
+	 * A description of this gallery.
+	 */
+	private String description;
 
+	public Gallery(JSONObject galleryJSON) {
+		this.galleryJSON = galleryJSON;
+		
+		// Set basic properties
+		
+		
+		
+	}
+	
 	/**
 	 * 
 	 * @param id
 	 * @param galleryURL
 	 */
+	@Deprecated
 	public Gallery(String galleryURL) {
 		
 		// Download the gallery JSON
@@ -47,6 +67,7 @@ public class Gallery {
 
 	}
 
+	@Deprecated
 	private class DownloadBasicGalleryDetails extends
 			AsyncTask<String, Void, Void> {
 
@@ -96,16 +117,6 @@ public class Gallery {
 			return null;
 		}
 
-	}
-
-	/**
-	 * Returns whether or not this Gallery has downloaded its JSON descriptor
-	 * and is ready to be loaded with art.
-	 * 
-	 * @return Whether or not the gallery is ready.
-	 */
-	public boolean isReadyToDownloadArt() {
-		return galleryJSON != null;	// TODO Robustify
 	}
 
 }
